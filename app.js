@@ -21,7 +21,9 @@ function openModal(id) {
   document.querySelector("#modal-description").textContent = project.description;
   document.querySelector("#modal-stack").textContent = project.stack;
   document.querySelector("#modal-year").textContent = project.year;
-  modalImage.innerHTML = project.image ? `<img src="${project.image}" alt="${project.title} 项目画面" />` : `<div class="modal-placeholder"><span>${project.title}</span><strong>正在整理更多画面</strong></div>`;
+  modalImage.innerHTML = project.image
+    ? `<figure class="modal-figure"><img src="${project.image}" alt="${project.title} 项目截图" loading="eager" decoding="async" /><figcaption>项目截图</figcaption></figure>`
+    : `<div class="modal-placeholder"><span>${project.title}</span><strong>项目截图整理中</strong></div>`;
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
