@@ -94,6 +94,9 @@ h1 span:first-child { color: #747770; }
 .project-open { align-self: start; margin-top: auto; min-height: 36px; border: 0; padding: 0; background: transparent; color: var(--ink); font-size: 12px; font-weight: 800; }
 .project-open span { margin-left: 7px; color: var(--coral); transition: margin .2s ease; }
 .project-open:hover span { margin-left: 11px; }
+.project-github { align-self: start; padding: 6px 0; color: var(--muted); font-size: 12px; font-weight: 800; text-decoration: none; }
+.project-github:hover { color: var(--coral); }
+.project-github span { margin-left: 7px; }
 .is-filtered { display: none; }
 
 .media-savings { background: #d5ded9; }
