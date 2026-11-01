@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="小七的个人作品集，记录网页、游戏和视频创作。" />
+    <title>小七 / Personal Portfolio</title>
+    <link rel="icon" href="data:," />
+    <link rel="preload" as="image" href="./assets/handstouch-background-poster.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="返回顶部"><span>Q</span>小七</a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于我</a>
+      </nav>
+      <span class="header-link">小七的作品集 · 2026</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-heading section-wrap">
+          <p class="eyebrow">PERSONAL WORKS · 2026</p>
+          <h1 id="hero-title"><span>我把好奇心，</span><span>做成了作品。</span></h1>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-surface">
+            <video class="hero-surface-video" poster="./assets/handstouch-background-poster.webp" src="./assets/handstouch-background.mp4" preload="auto" loop muted playsinline></video>
+            <div class="hero-surface-wash"></div>
+          </div>
+          <div class="hands-overlay">
+            <div class="hands-frame" data-ready="false">
+              <img class="hands-poster" src="./assets/handstouch-poster.webp" width="1920" height="640" alt="" fetchpriority="high" draggable="false" />
+              <canvas class="hands-canvas"></canvas>
+            </div>
+            <video class="hands-source" src="./assets/handstouch-hands.mp4" preload="auto" muted playsinline loop tabindex="-1" disablepictureinpicture></video>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-intro">你好，我是小七。<br />把想法做成网页、游戏和动画。</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">查看作品 <span aria-hidden="true">↓</span></a>
+            <button class="motion-toggle" type="button" aria-pressed="false">暂停动画</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band section-wrap reveal" id="about">
+        <div class="section-label">关于我</div>
+        <div class="intro-grid">
+          <h2>小小的年纪，<br /><span>认真地做东西。</span></h2>
+          <div class="bio-copy">
+            <p>我对网页、游戏和动画都感兴趣。写代码对我来说像搭积木：先找到一个有趣的玩法，再把画面、交互和细节一点点补上。</p>
+            <p>这里放着我最近完成和持续打磨的作品。每个项目都从一个问题开始，最后变成一次真实的尝试。</p>
+            <dl class="profile-facts">
+              <div><dt>姓名</dt><dd>小七</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section-wrap" id="work">
+        <div class="work-heading reveal">
+          <div>
+            <div class="section-label">精选作品</div>
+            <h2>最近在做的事</h2>
+          </div>
+          <p>六个项目，三种媒介。<br />从实用工具到有故事的世界。</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="筛选作品">
+          <button class="filter is-active" data-filter="all">全部 <span>06</span></button>
+          <button class="filter" data-filter="web">网页与 App <span>03</span></button>
+          <button class="filter" data-filter="game">游戏 <span>02</span></button>
+          <button class="filter" data-filter="motion">视频与动画 <span>01</span></button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project reveal" data-category="web" data-project="savings">
+            <div class="project-media media-savings"><img loading="lazy" decoding="async" src="./assets/savings.jpg" alt="小卡攒钱记界面" /></div>
+            <div class="project-meta"><span>01 / WEB APP</span><span>2026</span></div>
+            <h3>小卡攒钱记</h3>
+            <p>把预算、消费和收藏做成一个有持续反馈的日常系统。</p>
+            <button class="project-open" aria-label="查看项目：小卡攒钱记">查看项目 <span>↗</span></button>
+          </article>
+
+          <article class="project reveal" data-category="web" data-project="meal">
+            <div class="project-media media-meal"><div class="meal-art"><span>今天吃什么</span><strong>把纠结<br />变成一桌菜。</strong><i>budget · time · ingredients</i></div></div>
+            <div class="project-meta"><span>02 / WEB TOOL</span><span>2026</span></div>
+            <h3>今天吃什么</h3>
+            <p>输入预算、时间和食材，得到一份真正能做的菜单。</p>
+            <button class="project-open" aria-label="查看项目：今天吃什么">查看项目 <span>↗</span></button>
+          </article>
+
+          <article class="project reveal" data-category="game" data-project="terminus">
+            <div class="project-media media-terminus"><img loading="lazy" decoding="async" src="./assets/terminus-cover.webp" alt="终点站不存在游戏画面" /></div>
+            <div class="project-meta"><span>03 / GODOT GAME</span><span>2026</span></div>
+            <h3>终点站不存在</h3>
+            <p>一列穿过三个年代的雪夜列车。寻找零件，修复广播，决定终点。</p>
+            <button class="project-open" aria-label="查看项目：终点站不存在">查看项目 <span>↗</span></button>
+          </article>
+
+          <article class="project reveal" data-category="web" data-project="idol">
+            <div class="project-media media-idol"><div class="idol-art"><span>K-POP</span><strong>find<br />your<br />match</strong><b>personality quiz</b></div></div>
+            <div class="project-meta"><span>04 / HTML</span><span>2026</span></div>
+            <h3>本命偶像匹配测试</h3>
+            <p>用星座、MBTI 和偏好，找到和你最像的 K-pop 成员。</p>
+            <button class="project-open" aria-label="查看项目：本命偶像匹配测试">查看项目 <span>↗</span></button>
+          </article>
+
+          <article class="project reveal" data-category="game" data-project="dinner">
+            <div class="project-media media-dinner"><div class="dinner-art"><span>BEFORE DINNER</span><strong>晚饭<br />之前</strong><i>雨夜老宅 · 逃生原型</i></div></div>
+            <div class="project-meta"><span>05 / GODOT GAME</span><span>2026</span></div>
+            <h3>晚饭之前</h3>
+            <p>在雨夜老宅完成一条短逃生链，躲开奶奶，找到最后一把钥匙。</p>
+            <button class="project-open" aria-label="查看项目：晚饭之前">查看项目 <span>↗</span></button>
+          </article>
+
+          <article class="project reveal" data-category="motion" data-project="motion">
+            <div class="project-media media-motion"><img loading="lazy" decoding="async" src="./assets/girl-group.png" alt="女团舞蹈视频预览" /></div>
+            <div class="project-meta"><span>06 / REMOTION</span><span>2026</span></div>
+            <h3>舞台动作实验</h3>
+            <p>用 Remotion 做人物、节奏和镜头的连续动画预览。</p>
+            <button class="project-open" aria-label="查看项目：舞台动作实验">查看项目 <span>↗</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing section-wrap reveal">
+        <div class="closing-rule"></div>
+        <p class="section-label">下一件作品</p>
+        <h2>还在学习，<br /><em>也在继续做。</em></h2>
+        <a class="button button-coral" href="#about">认识小七 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><span>小七 / Personal Portfolio</span><span>Made with curiosity</span><span>2026</span></footer>
+
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card">
+        <button class="modal-close" data-close-modal aria-label="关闭项目详情">×</button>
+        <p class="section-label" id="modal-kicker">PROJECT</p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div class="modal-details"><span id="modal-stack"></span><span id="modal-year"></span></div>
+        <div class="modal-image" id="modal-image"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script type="module" src="./hero-motion.js"></script>
+  </body>
+</html>
